@@ -11,7 +11,7 @@ export default class SubOrderController extends Controller {
   public async index({ query: { name, msg } }) {
     console.log(this.ctx.query);
     await this.app.emqtt.publish(name, msg, { qos: 0 });
-    const school = await this.app.model.School.findAll();
+    const school = await this.ctx.service.school.all();
     await this.app.emqtt.publish(name, JSON.stringify(school), { qos: 0 });
     return JSON.stringify(school);
   }
