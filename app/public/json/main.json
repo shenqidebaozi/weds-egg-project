@@ -1,0 +1,1 @@
+{"swagger":"2.0","info":{"title":"\b示例","version":"1.0.0"},"host":"127.0.0.1:7001","basePath":"/api","schemes":["http"],"tags":[{"name":"/v1","description":"用户"}],"paths":{"/v1/send":{"get":{"tags":["/v1"],"summary":"向指定设备发送消息","description":"向指定设备发送消息","produces":["application/json"],"consumes":["application/json"],"parameters":[]}}},"definitions":{}}
